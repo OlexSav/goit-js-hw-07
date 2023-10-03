@@ -7,8 +7,8 @@ const cardMarkup = createPictureCards(galleryItems);
 pictureContainer.insertAdjacentHTML("beforeend", cardMarkup);
 pictureContainer.addEventListener("click", choosePictureCard);
 
-function createPictureCards(item) {
-  return item
+function createPictureCards(items) {
+  return items
     .map(
       ({ preview, original, description }) => `
     <li class="gallery__item">
